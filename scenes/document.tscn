@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://bsp5jdkk2nafh"]
+
+[ext_resource type="Script" uid="uid://cn6tq2uyh1xxf" path="res://scenes/document.gd" id="1_lbpuj"]
+[ext_resource type="Texture2D" uid="uid://diltieaqq6hs2" path="res://icon.svg" id="2_kedp3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lbpuj"]
+size = Vector2(128, 128)
+
+[node name="Document" type="Control" unique_id=400261991]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_lbpuj")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=402177691]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_kedp3")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1493588443]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 19.0
+offset_top = 11.0
+offset_right = 110.0
+offset_bottom = 68.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Paper"
+fit_content = true
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1954484827]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=910704453]
+position = Vector2(64, 64)
+shape = SubResource("RectangleShape2D_lbpuj")

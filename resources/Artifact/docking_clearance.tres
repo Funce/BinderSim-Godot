@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="DockingClearance" format=3 uid="uid://bykm7vg70v1or"]
+
+[ext_resource type="Script" uid="uid://bl28oysv40aba" path="res://resources/Artifact/docking_clearance.gd" id="1_3d2t1"]
+
+[resource]
+script = ExtResource("1_3d2t1")
+metadata/_custom_type_script = "uid://bl28oysv40aba"

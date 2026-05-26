@@ -1,0 +1,3 @@
+class_name Office extends Resource
+
+enum {DOCKING, CUSTOMS, QUARANTINE, REQUISITIONS, PASSENGER, LIABILITY}
