@@ -7,8 +7,7 @@ enum Office { DOCKING, CUSTOMS, QUARANTINE, REQUISITIONS, PASSENGERS, LIABILITY 
 @export var artifact_class : Artifact.Type
 @export var dimensions: Vector2
 @export var background: Texture2D
-@export var artifact_fields: Dictionary[String, Variant]
-
+@export var slots: Array[ArtifactSlot]
 
 var metadata : Dictionary[String, Variant]
 

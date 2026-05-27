@@ -1,0 +1,1 @@
+class_name ArtifactSlot extends Resource

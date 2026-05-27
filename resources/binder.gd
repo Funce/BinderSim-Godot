@@ -4,6 +4,7 @@ class_name Binder extends Resource
 # It also stores a `vessel_reference` to track the physical ship currently
 # inked to the paperwork.
 
+var vessel : Vessel
 var artifacts : Array[Artifact]
 
 
