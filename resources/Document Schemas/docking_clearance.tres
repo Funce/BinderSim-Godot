@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="DocumentSchema" format=3 uid="uid://b4a84ah5wn8va"]
+
+[ext_resource type="Script" uid="uid://d06g7yhhhxsb2" path="res://resources/Document Schemas/document_schema.gd" id="1_nemt3"]
+[ext_resource type="Script" uid="uid://dgd8umm3hf2hj" path="res://resources/Document Schemas/Slot Definitions/slot_definition.gd" id="2_nemt3"]
+
+[resource]
+script = ExtResource("1_nemt3")
+id = "docking_clearance"
+name = "Docking Clearance"
+slots = Array[ExtResource("2_nemt3")]([null])
+metadata/_custom_type_script = "uid://d06g7yhhhxsb2"

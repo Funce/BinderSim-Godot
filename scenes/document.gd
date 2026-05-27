@@ -1,14 +1,14 @@
-extends Control
+class_name Document extends RefCounted
 
-signal artifact_changed
+signal schema_changed
 
-@export var artifact : Artifact:
-	set(new_artifact):
-		artifact = new_artifact
-		artifact_changed.emit()
+@export var schema: DocumentSchema:
+	set(new_schema):
+		schema = new_schema
+		schema_changed.emit()
 
 func _ready() -> void:
-	artifact_changed.connect(update_visuals)
+	schema_changed.connect(update_visuals)
 	update_visuals()
 
 func update_visuals() -> void:

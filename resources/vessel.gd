@@ -1,6 +1,11 @@
-class_name Vessel extends Resource
+class_name Vessel extends RefCounted
 
-enum State { WAITING, COMPLETE }
+enum State { 
+	ARRIVING,
+	WAITING,
+	CLEARED,
+	REJECTED,
+}
 
-@export var id : int = 0
+@export var id: int = 0
 @export var state: State = State.WAITING
